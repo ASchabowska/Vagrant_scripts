@@ -18,3 +18,6 @@ cd jenkins
 ```
 vagrant up
 ```
+4. Go to https://172.42.42.104:8080 and set up your Jenkins
+
+
