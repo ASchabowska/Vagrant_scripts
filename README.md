@@ -7,6 +7,6 @@ Requirements:
 
 
 1. Clone repository
-'''
+```
 git clone https://github.com/ASchabowska/Vagrant_scripts.git
-'''
+```
