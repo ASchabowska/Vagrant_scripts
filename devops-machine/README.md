@@ -8,8 +8,11 @@ Installed tools:
 - helm
 - ansible
 
-
-1. Vagrant up the devops machine
+1. Go to devops-machine directory
+```
+cd devops-machine
+```
+2. Vagrant up the devops machine
 ```
 vagrant up
 ```
