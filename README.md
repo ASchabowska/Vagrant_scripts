@@ -1,23 +1,12 @@
-# Jenkins machine with vagrant 
+# Vagrant scripts
 
 
 Requirements:
-- Virtualbox installed 
-- Vagrant installed
+- [Virtualbox installed](https://www.virtualbox.org/wiki/Downloads)
+- [Vagrant installed](https://www.vagrantup.com/downloads.html)
 
 
-1. Clone the repository
-```
+1. Clone repository
+'''
 git clone https://github.com/ASchabowska/Vagrant_scripts.git
-```
-2. Go to jenkins folder
-```
-cd jenkins
-```
-3. Vagrant up the jenkins machine
-```
-vagrant up
-```
-4. Go to http://172.42.42.104:8080 and set up your Jenkins
-
-
+'''

@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.provision "shell", path: "bootstrap.sh"
+
+  # Devops machine
+  config.vm.define "devops-machine" do |devops|
+    devops.vm.box = "ubuntu/trusty64"
+    devops.vm.hostname = "devops.example.com"
+    devops.vm.network "private_network", ip: "172.42.42.107"
+    devops.vm.provider "virtualbox" do |v|
+      v.gui = true  
+      v.name = "devops-machine"
+      v.memory = 4096
+      v.cpus = 4
+    end
+  end 
+  
+end
