@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.provision "shell", path: "bootstrap.sh"
+
+  # Docker machine
+  config.vm.define "docker-machine" do |docker|
+    docker.vm.box = "ubuntu/trusty64"
+    docker.vm.hostname = "devops.example.com"
+    docker.vm.network "private_network", ip: "172.42.42.107"
+    docker.vm.provider "virtualbox" do |v|
+      v.gui = true  
+      v.name = "docker-machine"
+      v.memory = 2046
+      v.cpus = 2
+    end
+  end 
+  
+end
